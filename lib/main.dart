@@ -26,10 +26,10 @@ class HomePage extends StatelessWidget {
               child: Image.network(' https://tse4.mm.bing.net/th?id=OIP.fBhpDreDI6t2DL8ibq6v1QHaE7&pid=Api&P=0&w=232&h=155'),
               ),
               title: Text(
-               'Hi, Vijeya' ,
+               'WELCOME' ,
                 style: TextStyle(fontWeight: FontWeight.bold),
               ),
-             subtitle: Text('Good Morning'),
+             subtitle: Text('HEALTH CARE'),
              trailing: Row(
               mainAxisSize: MainAxisSize.min,
                children: <Widget>[
@@ -56,7 +56,7 @@ class HomePage extends StatelessWidget {
                       Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Container(
-                          height: 390,
+                          height: 500,
                           width: double.infinity,
                           child: Card(
                             shape: RoundedRectangleBorder(
@@ -100,6 +100,11 @@ class HomePage extends StatelessWidget {
                                 ),
                                 ListTile(
                                   title: Text('Gastro and Liver Care',
+                                  style: TextStyle(
+                                    color: Colors.blueGrey[200],
+                                  ),
+                                  ),
+                                  subtitle: Text('MD, MBBS, ABC, XYZ',
                                   style: TextStyle(
                                     color: Colors.blueGrey[200],
                                   ),
@@ -179,7 +184,7 @@ class HomePage extends StatelessWidget {
                                    ],
                               ),
 
-                                SizedBox(width: 55),
+                                /**SizedBox(width: 55),
                               Row(children: <Widget>[
                                 Icon(Icons.calendar_today,
                               size: 15,
@@ -191,33 +196,56 @@ class HomePage extends StatelessWidget {
                                 ),
                                 ),
                                 ],
-                              ),
+                              ),**/
                             ],
                         ),
                         ),
-                  SizedBox(height: 10),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: ButtonTheme(
-                  padding: EdgeInsets.only(),
-                  buttonColor: Colors.white,
-                  height: 50,
-                  minWidth: double.infinity,
-                  child: RaisedButton(
-                      child: Text(
-                        'Book an Appointment',
-                        style: TextStyle(
-                          color: Colors.teal[800],
-                          fontSize: 16,
-                        ),
-                      ),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    onPressed: () {},
-                  ),
-                ),
-              )
+                                SizedBox(height: 10),
+                                Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: ButtonTheme(
+                                    padding: EdgeInsets.only(),
+                                    buttonColor: Colors.white,
+                                    height: 50,
+                                    minWidth: double.infinity,
+                                    child: RaisedButton(
+                                      child: Text(
+                                        'DATE AND TIME',
+                                        style: TextStyle(
+                                          color: Colors.teal[800],
+                                          fontSize: 16,
+                                        ),
+                                      ),
+                                      shape: RoundedRectangleBorder(
+                                        borderRadius: BorderRadius.circular(10),
+                                      ),
+                                      onPressed: () {},
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(height: 10),
+                                Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: ButtonTheme(
+                                    padding: EdgeInsets.only(),
+                                    buttonColor: Colors.white,
+                                    height: 50,
+                                    minWidth: double.infinity,
+                                    child: RaisedButton(
+                                      child: Text(
+                                        'Book an Appointment',
+                                        style: TextStyle(
+                                          color: Colors.teal[800],
+                                          fontSize: 16,
+                                        ),
+                                      ),
+                                      shape: RoundedRectangleBorder(
+                                        borderRadius: BorderRadius.circular(10),
+                                      ),
+                                      onPressed: () {},
+                                    ),
+                                  ),
+                                )
                     ],
                   ),
                           ),
